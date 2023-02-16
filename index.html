@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Text Editor</title>
+</head>
+
+<body>
+
+    <section class="py-12">
+        <div class="inner max-w-6xl mx-auto">
+            <h2 class="text-center text-4xl font-semibold mb-14">Text Editor</h2>
+
+            <div class="editor-dashboard">
+                <div class="editor-control rounded bg-sky-100 grid grid-cols-3 w-full">
+
+                    <div class="left-col  flex justify-start gap-6 pl-2">
+                        <a data-group="1" id="font-bold" class="px-3 py-1 rounded"> <i class="fa-solid fa-bold"></i></a>
+                        <a data-group="1" id="underline" class=" px-3 py-1 rounded"><i
+                                class="fa-solid fa-underline"></i></a>
+                        <a data-group="1" id="italic" class=" px-3 py-1 rounded"><i class="fa-solid fa-italic"></i></a>
+                    </div>
+                    <div class="mid-col  flex justify-center gap-6">
+                        <a id="text-left" class=" px-3 py-1 rounded"><i class="fa-solid fa-align-left"></i></a>
+                        <a id="text-center" class=" px-3 py-1 rounded"><i class="fa-solid fa-align-center"></i></a>
+                        <a id="text-right" class=" px-3 py-1 rounded"><i class="fa-solid fa-align-right"></i></a>
+                    </div>
+
+                    <div class="right-col  pr-2 flex justify-end gap-6 items-center">
+                        <input id="number" type="number" value="16" class="w-12 rounded pl-1 py-px" >
+                        <input id="color" class="px-0 py-0 rounded" type="color">
+                    </div>
+                </div>
+            </div>
+            <textarea name="" id="text" cols="30" rows="10"  class="mt-2 border rounded-lg w-full p-3 h-72"></textarea>
+        </div>
+    </section>
+
+</body>
+
+
+
+
+</html>
